@@ -12,34 +12,29 @@ img {
 	border: 0;
 }
 #shadow {
-	background-image: url(/img/rlshadow.png);
-	background-repeat: no-repeat;
-	background-position: right top;
-	width: 777px;
-	height: 612px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0;
-	margin-bottom:0;
-	position: relative;
-}
-#lshadow {
-	margin: 0;
-	margin-left: 2px;
-	padding: 0;
+  width: 773px;
+  height: 613px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  margin-bottom:0;
+  position: relative;
 }
 #main {
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
 	border:1px solid white;
 	width: 770px;
-	margin-left: 0px;
-	margin-right: 5px;
+  margin-left: auto;
+  margin-right: auto;
 	margin-top:0px;
 	margin-bottom:0px;
 	background-color: black;
 	color: white;
 }
 #top {
-    margin: 0;
+  margin: 0;
 	width: 770px;
 	height: 88px;
 }
@@ -50,8 +45,6 @@ img {
 	top: 20px;
 	left: 16px;
 }
-
-
 #interna {
 	border: 1px solid black;
 	width: 770px;
