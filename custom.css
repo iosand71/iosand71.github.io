@@ -1,3 +1,6 @@
 body {
   background-color: #A0A0A3;
 }
+#notebook-container {
+  width: 95%;
+}
