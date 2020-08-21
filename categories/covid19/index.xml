@@ -10,12 +10,12 @@
         <atom:link href="https://www.iosand.com/categories/covid19/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Andamento del Covid19 in Italia</title>
+      <title>Andamento del Covid19 in Italia e nel Mondo</title>
       <link>https://www.iosand.com/posts/covid19/</link>
       <pubDate>Sat, 06 Jun 2020 19:03:20 +0200</pubDate>
       
       <guid>https://www.iosand.com/posts/covid19/</guid>
-      <description>Andamento covid19 in Italia</description>
+      <description>Andamento covid19</description>
     </item>
   </channel>
 </rss>
