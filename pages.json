@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Site content manifest for LLM management",
+  "lastUpdated": "2025-01-24",
+  "site": {
+    "name": "Iosand.com",
+    "url": "https://www.iosand.com",
+    "language": "it-it",
+    "owner": "Andrea Iosio"
+  },
+  "pages": [
+    {
+      "path": "/index.html",
+      "title": "Iosand Home",
+      "description": "Andrea Iosio's personal website and blog",
+      "type": "home",
+      "inMenu": true,
+      "menuLabel": "Home"
+    },
+    {
+      "path": "/covid19-internazionale.html",
+      "title": "Covid-19 Internazionale",
+      "description": "International COVID-19 data visualization",
+      "type": "data-page",
+      "source": "jupyter-notebook",
+      "inMenu": true,
+      "menuLabel": "Covid-19 Internazionale"
+    },
+    {
+      "path": "/covid19-italia.html",
+      "title": "Covid-19 Italia",
+      "description": "Italian COVID-19 data visualization",
+      "type": "data-page",
+      "source": "jupyter-notebook",
+      "inMenu": true,
+      "menuLabel": "Covid-19 Italia"
+    },
+    {
+      "path": "/covid19-lombardia.html",
+      "title": "Covid-19 Lombardia",
+      "description": "Lombardy COVID-19 data visualization",
+      "type": "data-page",
+      "source": "jupyter-notebook",
+      "inMenu": true,
+      "menuLabel": "Covid-19 Lombardia"
+    },
+    {
+      "path": "/covid19-piemonte.html",
+      "title": "Covid-19 Piemonte",
+      "description": "Piedmont COVID-19 data visualization",
+      "type": "data-page",
+      "source": "jupyter-notebook",
+      "inMenu": true,
+      "menuLabel": "Covid-19 Piemonte"
+    },
+    {
+      "path": "/posts/index.html",
+      "title": "Posts",
+      "description": "Blog posts listing",
+      "type": "listing",
+      "inMenu": false
+    },
+    {
+      "path": "/posts/covid19/index.html",
+      "title": "COVID-19 Post",
+      "description": "COVID-19 blog post",
+      "type": "post",
+      "category": "covid19",
+      "inMenu": false
+    },
+    {
+      "path": "/categories/index.html",
+      "title": "Categories",
+      "description": "Blog categories listing",
+      "type": "listing",
+      "inMenu": false
+    },
+    {
+      "path": "/categories/covid19/index.html",
+      "title": "COVID-19 Category",
+      "description": "Posts in COVID-19 category",
+      "type": "category",
+      "inMenu": false
+    },
+    {
+      "path": "/tags/index.html",
+      "title": "Tags",
+      "description": "Blog tags listing",
+      "type": "listing",
+      "inMenu": false
+    }
+  ],
+  "assets": {
+    "css": [
+      {
+        "path": "/css/concated.min.css",
+        "description": "Main stylesheet (minified)",
+        "editable": false
+      },
+      {
+        "path": "/css/styles.css",
+        "description": "Main stylesheet (source, editable)",
+        "editable": true
+      }
+    ],
+    "js": [
+      {
+        "path": "/js/core.min.js",
+        "description": "Core JavaScript (hamburger menu)",
+        "editable": false
+      }
+    ],
+    "images": [
+      {
+        "path": "/img/ki.gif",
+        "description": "Logo/navigation icon"
+      },
+      {
+        "path": "/img/motto.gif",
+        "description": "Motto image (nana-korobi ya-oki)"
+      },
+      {
+        "path": "/img/background3.gif",
+        "description": "Page background pattern"
+      }
+    ]
+  },
+  "templates": {
+    "newPage": "/_template.html"
+  },
+  "feeds": [
+    {
+      "path": "/index.xml",
+      "type": "rss",
+      "description": "Main RSS feed"
+    },
+    {
+      "path": "/posts/index.xml",
+      "type": "rss",
+      "description": "Posts RSS feed"
+    }
+  ],
+  "seo": {
+    "sitemap": "/sitemap.xml",
+    "googleVerification": "/googlecb1912c1fd42a9fe.html"
+  }
+}

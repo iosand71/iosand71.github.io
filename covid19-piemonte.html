@@ -9,7 +9,7 @@
     var mimeElement = document.querySelector('script[type="application/vnd.jupyter.widget-view+json"]');
     var scriptElement = document.createElement('script');
     
-    var widgetRendererSrc = 'https://unpkg.com/@jupyter-widgets/html-manager@*/dist/embed-amd.js';
+    var widgetRendererSrc = 'https://unpkg.com/@jupyter-widgets/html-manager@0.20.1/dist/embed-amd.js';
     
     var widgetState;
 
@@ -19,7 +19,7 @@
 
       if (widgetState && (widgetState.version_major < 2 || !widgetState.version_major)) {
         
-        var widgetRendererSrc = 'https://unpkg.com/@jupyter-js-widgets@*/dist/embed.js';
+        var widgetRendererSrc = 'https://unpkg.com/@jupyter-js-widgets@^2.1.4/dist/embed.js';
         
       }
     } catch(e) {}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it-it" dir="ltr">
+<!--
+  TEMPLATE FILE FOR NEW PAGES
+
+  Instructions for LLMs:
+  1. Copy this file and rename it (e.g., my-new-page.html)
+  2. Replace {{PAGE_TITLE}} with the page title
+  3. Replace {{PAGE_DESCRIPTION}} with a brief description
+  4. Replace {{PAGE_CONTENT}} with the actual content
+  5. Add the page to the hamburger menu in index.html
+  6. Update pages.json with the new page entry
+-->
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- PAGE METADATA - Update these -->
+  <title>{{PAGE_TITLE}} - Iosand</title>
+  <meta name="description" content="{{PAGE_DESCRIPTION}}" />
+
+  <!-- Stylesheets (do not modify) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link href="/css/concated.min.css" rel="stylesheet">
+  <link rel="alternate" type="application/rss+xml" href="/index.xml" title="Iosand Home" />
+
+  <style>
+    body {
+      background: #ecedef url("/img/background3.gif") repeat;
+    }
+  </style>
+</head>
+
+<body class="list-body">
+  <!-- NAVIGATION (same on all pages) -->
+  <nav class="nav-bar side-padding">
+    <a href="/" class="nav-text"><img id="ki" src="/img/ki.gif" alt="KI" title="ki"></a>
+    <h1 class="nav-header">Iosand.com</h1>
+    <div class="hamburger-menu">
+      <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+        <span></span>
+        <span></span>
+      </button>
+      <ul id="menu" class="hamburger-menu-overlay">
+        <li><a href="/" class="hamburger-menu-overlay-link">Home</a></li>
+        <!-- Add more menu items as needed -->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="content side-padding">
+    <article class="post side-text-padding">
+      <header class="post-header">
+        <h1 class="post-title">{{PAGE_TITLE}}</h1>
+        <!-- Optional: Add date for blog posts -->
+        <!-- <time class="post-date" datetime="YYYY-MM-DD">Month DD, YYYY</time> -->
+      </header>
+
+      <div class="post-content">
+        {{PAGE_CONTENT}}
+
+        <!--
+          CONTENT EXAMPLES:
+
+          Paragraph:
+          <p>Your text here.</p>
+
+          Heading:
+          <h2>Section Title</h2>
+
+          List:
+          <ul>
+            <li>Item one</li>
+            <li>Item two</li>
+          </ul>
+
+          Image:
+          <figure class="post-figure">
+            <img src="/img/your-image.jpg" alt="Description">
+            <figcaption>Optional caption</figcaption>
+          </figure>
+
+          Code block:
+          <pre><code>your code here</code></pre>
+
+          Blockquote:
+          <blockquote>
+            <p>Quoted text here.</p>
+          </blockquote>
+
+          Link:
+          <a href="https://example.com">Link text</a>
+
+          Table:
+          <table>
+            <thead>
+              <tr><th>Header 1</th><th>Header 2</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Cell 1</td><td>Cell 2</td></tr>
+            </tbody>
+          </table>
+        -->
+      </div>
+    </article>
+  </main>
+
+  <!-- SCRIPTS (do not modify) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+  <script src="/js/core.min.js"></script>
+</body>
+</html>
