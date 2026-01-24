@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "description": "Site content manifest for LLM management",
-  "lastUpdated": "2025-01-24",
+  "lastUpdated": "2026-01-24",
   "site": {
     "name": "Iosand.com",
     "url": "https://www.iosand.com",
@@ -52,42 +52,6 @@
       "source": "jupyter-notebook",
       "inMenu": true,
       "menuLabel": "Covid-19 Piemonte"
-    },
-    {
-      "path": "/posts/index.html",
-      "title": "Posts",
-      "description": "Blog posts listing",
-      "type": "listing",
-      "inMenu": false
-    },
-    {
-      "path": "/posts/covid19/index.html",
-      "title": "COVID-19 Post",
-      "description": "COVID-19 blog post",
-      "type": "post",
-      "category": "covid19",
-      "inMenu": false
-    },
-    {
-      "path": "/categories/index.html",
-      "title": "Categories",
-      "description": "Blog categories listing",
-      "type": "listing",
-      "inMenu": false
-    },
-    {
-      "path": "/categories/covid19/index.html",
-      "title": "COVID-19 Category",
-      "description": "Posts in COVID-19 category",
-      "type": "category",
-      "inMenu": false
-    },
-    {
-      "path": "/tags/index.html",
-      "title": "Tags",
-      "description": "Blog tags listing",
-      "type": "listing",
-      "inMenu": false
     }
   ],
   "assets": {
@@ -133,11 +97,6 @@
       "path": "/index.xml",
       "type": "rss",
       "description": "Main RSS feed"
-    },
-    {
-      "path": "/posts/index.xml",
-      "type": "rss",
-      "description": "Posts RSS feed"
     }
   ],
   "seo": {
