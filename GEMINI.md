@@ -11,7 +11,7 @@ iosand71.github.io/
 ├── _template.html        # Template for new pages
 ├── css/
 │   ├── styles.css        # Editable CSS source
-│   └── concated.min.css  # Minified CSS (avoid editing)
+│   └── styles.min.css  # Minified CSS (avoid editing)
 ├── js/
 │   └── core.min.js       # JavaScript (hamburger menu)
 ├── img/                  # Images and assets
@@ -66,5 +66,5 @@ Push to `master` branch - GitHub Pages auto-deploys.
 | File | Purpose |
 |------|---------|
 | `CNAME` | Custom domain (www.iosand.com) - do not delete |
-| `css/concated.min.css` | Main styles - avoid direct edits |
+| `css/styles.min.css` | Main styles - avoid direct edits |
 | `sitemap.xml` | Update when adding new pages |

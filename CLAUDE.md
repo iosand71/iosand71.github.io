@@ -15,7 +15,7 @@ This is Andrea Iosio's personal website hosted on GitHub Pages at www.iosand.com
 | `pages.json` | **Content manifest** - lists all pages and assets |
 | `_template.html` | **Template for new pages** - copy this to create pages |
 | `css/styles.css` | **Editable CSS source** - formatted and documented |
-| `css/concated.min.css` | Main stylesheet (minified, avoid editing) |
+| `css/styles.min.css` | Main stylesheet (minified, avoid editing) |
 | `js/core.min.js` | JavaScript (hamburger menu) |
 | `img/` | Images and assets |
 | `font/` | Lato font files |

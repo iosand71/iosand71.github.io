@@ -57,7 +57,7 @@
   "assets": {
     "css": [
       {
-        "path": "/css/concated.min.css",
+        "path": "/css/styles.min.css",
         "description": "Main stylesheet (minified)",
         "editable": false
       },
