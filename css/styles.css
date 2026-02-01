@@ -680,32 +680,7 @@ strong {
   border-left: thin solid #7a7b7c;
 }
 
-/* ==========================================================================
-   9. Pagination
-   ========================================================================== */
 
-.end-nav {
-  width: 100%;
-  max-width: 49rem;
-}
-
-.pagination-nav {
-  margin: 2em 0;
-  width: 100%;
-  max-width: 47rem;
-}
-
-.pagination-text {
-  font-family: latolatinwebmedium;
-}
-
-.pagination-newer {
-  float: left;
-}
-
-.pagination-older {
-  float: right;
-}
 
 /* ==========================================================================
    10. Buttons
