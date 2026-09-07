@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 
-This repository contains the static Iosand.com site hosted through GitHub Pages. Root-level HTML files are published pages: `index.html` is the homepage, and `covid19-*.html` are large, notebook-exported data reports. `_template.html` provides a starting point for additional pages.
+This repository contains the static Iosand.com site hosted through GitHub Pages. `index.html` is the homepage. `archived/2026/covid19-*.html` contains archived, unmaintained notebook-exported data reports; the year directory records the year of archiving. These reports are not linked from the homepage. `_template.html` provides a starting point for additional pages.
 
 `css/home.css` styles the homepage; `css/styles.css` and its minified counterpart support legacy pages. `js/core.min.js` contains navigation behavior. Images and bundled fonts live in `img/` and `font/`. `pages.json` inventories content and assets; `sitemap.xml` and `index.xml` provide the sitemap and RSS feed. `CNAME` configures the custom domain.
 
@@ -21,6 +21,8 @@ When changing `css/styles.css`, regenerate `css/styles.min.css` with a CSS minif
 Use two-space indentation in hand-maintained HTML, CSS, and JSON, following nearby code. Prefer lowercase, hyphen-separated page names and CSS classes, such as `my-new-page.html` and `site-header`. No formatter or linter is configured.
 
 Keep Italian-facing content consistent with existing pages. Preserve semantic markup, image alternative text, keyboard focus styles, and responsive layouts. Edit source CSS rather than the minified copy; avoid unrelated formatting of notebook exports.
+
+Treat files under `archived/` as historical snapshots. Do not modernize their dependencies, styling, or content unless explicitly requested. Record archived pages in `pages.json` with `status: "archived"`, `maintained: false`, and `archivedYear`.
 
 ## Testing Guidelines
 

@@ -18,7 +18,10 @@
       "menuLabel": "Home"
     },
     {
-      "path": "/covid19-internazionale.html",
+      "path": "/archived/2026/covid19-internazionale.html",
+      "status": "archived",
+      "maintained": false,
+      "archivedYear": 2026,
       "title": "Covid-19 Internazionale",
       "description": "International COVID-19 data visualization",
       "type": "data-page",
@@ -27,7 +30,10 @@
       "menuLabel": "Covid-19 Internazionale"
     },
     {
-      "path": "/covid19-italia.html",
+      "path": "/archived/2026/covid19-italia.html",
+      "status": "archived",
+      "maintained": false,
+      "archivedYear": 2026,
       "title": "Covid-19 Italia",
       "description": "Italian COVID-19 data visualization",
       "type": "data-page",
@@ -36,7 +42,10 @@
       "menuLabel": "Covid-19 Italia"
     },
     {
-      "path": "/covid19-lombardia.html",
+      "path": "/archived/2026/covid19-lombardia.html",
+      "status": "archived",
+      "maintained": false,
+      "archivedYear": 2026,
       "title": "Covid-19 Lombardia",
       "description": "Lombardy COVID-19 data visualization",
       "type": "data-page",
@@ -45,7 +54,10 @@
       "menuLabel": "Covid-19 Lombardia"
     },
     {
-      "path": "/covid19-piemonte.html",
+      "path": "/archived/2026/covid19-piemonte.html",
+      "status": "archived",
+      "maintained": false,
+      "archivedYear": 2026,
       "title": "Covid-19 Piemonte",
       "description": "Piedmont COVID-19 data visualization",
       "type": "data-page",
