@@ -1,0 +1,35 @@
+# Repository Guidelines
+
+## Project Structure & Module Organization
+
+This repository contains the static Iosand.com site hosted through GitHub Pages. Root-level HTML files are published pages: `index.html` is the homepage, and `covid19-*.html` are large, notebook-exported data reports. `_template.html` provides a starting point for additional pages.
+
+`css/home.css` styles the homepage; `css/styles.css` and its minified counterpart support legacy pages. `js/core.min.js` contains navigation behavior. Images and bundled fonts live in `img/` and `font/`. `pages.json` inventories content and assets; `sitemap.xml` and `index.xml` provide the sitemap and RSS feed. `CNAME` configures the custom domain.
+
+## Build, Test, and Development Commands
+
+There is no package manifest, build pipeline, or dependency installation step. Serve the repository directly:
+
+- `python3 -m http.server 8000` — preview at `http://localhost:8000`; serving from the repository root preserves root-relative asset links.
+- `python3 -m json.tool pages.json > /dev/null` — check manifest JSON syntax.
+- `git diff --check` — catch whitespace errors before committing.
+
+When changing `css/styles.css`, regenerate `css/styles.min.css` with a CSS minifier and include both files. No minification command is configured in this repository.
+
+## Coding Style & Naming Conventions
+
+Use two-space indentation in hand-maintained HTML, CSS, and JSON, following nearby code. Prefer lowercase, hyphen-separated page names and CSS classes, such as `my-new-page.html` and `site-header`. No formatter or linter is configured.
+
+Keep Italian-facing content consistent with existing pages. Preserve semantic markup, image alternative text, keyboard focus styles, and responsive layouts. Edit source CSS rather than the minified copy; avoid unrelated formatting of notebook exports.
+
+## Testing Guidelines
+
+There is no automated test framework or coverage threshold. Preview changed pages at desktop and mobile widths. Check links, asset loading, keyboard navigation, browser console errors, and affected report charts or menus.
+
+## Commit & Pull Request Guidelines
+
+History uses short, action-oriented subjects, sometimes prefixed with `feat:` or `refactor:`. Follow that pattern and keep commits focused. Pull requests should describe the change, affected pages, and validation performed; link relevant issues and include screenshots for visual changes.
+
+## Content Updates
+
+Replace every template placeholder, including `{{PAGE_PATH}}`. The template's homepage hamburger-menu instruction is outdated: the current homepage has no menu. Update `pages.json` and applicable sitemap or feed entries when adding, removing, or renaming pages.
