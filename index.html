@@ -1,93 +1,39 @@
 <!DOCTYPE html>
-<html lang="it-it" dir="ltr">
-
+<html lang="it" dir="ltr">
 <head>
-  <meta name="generator" content="Hugo 0.74.3" />
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Iosand Home</title>
-  <meta name="description"
-    content="Andrea Iosio's personal website and blog. Contains articles about technology, programming, and other topics." />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css"
-    integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
-
-
-
-
-
-  <link href="/css/styles.min.css" rel="stylesheet">
-  <link rel="alternate" type="application/rss+xml" href="/index.xml" title="Iosand Home" />
-
-  <!-- Open Graph / Facebook -->
+  <meta name="description" content="Il sito personale di Andrea Iosio.">
+  <link rel="canonical" href="https://www.iosand.com/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.iosand.com/">
   <meta property="og:title" content="Iosand Home">
-  <meta property="og:description"
-    content="Andrea Iosio's personal website and blog. Contains articles about technology, programming, and other topics.">
+  <meta property="og:description" content="Il sito personale di Andrea Iosio.">
   <meta property="og:image" content="https://www.iosand.com/img/ki.gif">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://www.iosand.com/">
-  <meta property="twitter:title" content="Iosand Home">
-  <meta property="twitter:description"
-    content="Andrea Iosio's personal website and blog. Contains articles about technology, programming, and other topics.">
-  <meta property="twitter:image" content="https://www.iosand.com/img/ki.gif">
-
-  <style>
-    body {
-      background: #ecedef url("/img/background3.gif") repeat;
-    }
-  </style>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Iosand Home">
+  <meta name="twitter:description" content="Il sito personale di Andrea Iosio.">
+  <meta name="twitter:image" content="https://www.iosand.com/img/ki.gif">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/home.css">
 </head>
-
-<body class="list-body">
-  <nav class="nav-bar side-padding">
-    <a href="/" class="nav-text"><img id="ki" src="/img/ki.gif" alt="KI" title="ki"></a>
-    <h1 class="nav-header">
-      Iosand.com
-    </h1>
-    <div class="hamburger-menu">
-      <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu"
-        aria-label="Menu">
-        <span></span>
-        <span></span>
-      </button>
-      <ul id="menu" class="hamburger-menu-overlay">
-        <li><a href="/" class="hamburger-menu-overlay-link">Home</a></li>
-        <li><a href="/covid19-internazionale.html" class="hamburger-menu-overlay-link">Covid-19 Internazionale</a></li>
-        <li><a href="/covid19-italia.html" class="hamburger-menu-overlay-link">Covid-19 Italia</a></li>
-        <li><a href="/covid19-lombardia.html" class="hamburger-menu-overlay-link">Covid-19 Lombardia</a></li>
-        <li><a href="/covid19-piemonte.html" class="hamburger-menu-overlay-link">Covid-19 Piemonte</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <main class="card-container side-gutter">
-    <header class="list-header">
-
-      <img id="motto" class="motto" src="/img/motto.gif" alt="nana-korobi ya-oki"
-        title="Fall down seven times, get up eight" loading="lazy">
-
+<body>
+  <a class="skip-link" href="#main">Salta al contenuto</a>
+  <div class="page">
+    <header class="site-header">
+      <a class="logo" href="/" aria-label="Iosand, pagina iniziale">
+        <img src="/img/ki.gif" width="53" height="49" alt="Ki">
+      </a>
+      <h1>Iosand.com</h1>
     </header>
-
-
-
-
-
-  </main>
-
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js"
-    integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx"
-    crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js"
-    integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
-    onload="renderMathInElement(document.body);"></script>
-
-  <script src="/js/core.min.js"></script>
-
+    <main id="main">
+      <figure class="motto">
+        <img src="/img/motto.gif" width="704" height="342"
+          alt="Cadere sette volte. Rialzarsi otto. — Proverbio giapponese"
+          title="Nana korobi, ya oki" fetchpriority="high">
+      </figure>
+    </main>
+  </div>
 </body>
-
 </html>
