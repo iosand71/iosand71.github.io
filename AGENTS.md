@@ -2,9 +2,9 @@
 
 ## Project Structure & Module Organization
 
-This repository contains the static Iosand.com site hosted through GitHub Pages. `index.html` is the homepage. `archived/2026/covid19-*.html` contains archived, unmaintained notebook-exported data reports; the year directory records the year of archiving. These reports are not linked from the homepage. `_template.html` provides a starting point for additional pages.
+This repository contains the static Iosand.com site hosted through GitHub Pages. `index.html` is the homepage. `archived/2026/covid19-*.html` contains archived, unmaintained notebook-exported data reports; the year directory records the year of archiving. These reports are not linked from the homepage. The original homepage is preserved at `archived/2026/homepage-original.html`.
 
-`css/home.css` styles the homepage; `css/styles.css` and its minified counterpart support legacy pages. `js/core.min.js` contains navigation behavior. Images and bundled fonts live in `img/` and `font/`. `pages.json` inventories content and assets; `sitemap.xml` and `index.xml` provide the sitemap and RSS feed. `CNAME` configures the custom domain.
+`css/home.css` styles the homepage, while `archived/2026/homepage-original.css` supports the preserved original homepage. Images live in `img/`; the archived homepage uses `font/LatoLatin-Bold.woff2`. `pages.json` inventories content and assets; `sitemap.xml` and `index.xml` provide the sitemap and RSS feed. `CNAME` configures the custom domain.
 
 ## Build, Test, and Development Commands
 
@@ -14,13 +14,11 @@ There is no package manifest, build pipeline, or dependency installation step. S
 - `python3 -m json.tool pages.json > /dev/null` — check manifest JSON syntax.
 - `git diff --check` — catch whitespace errors before committing.
 
-When changing `css/styles.css`, regenerate `css/styles.min.css` with a CSS minifier and include both files. No minification command is configured in this repository.
-
 ## Coding Style & Naming Conventions
 
 Use two-space indentation in hand-maintained HTML, CSS, and JSON, following nearby code. Prefer lowercase, hyphen-separated page names and CSS classes, such as `my-new-page.html` and `site-header`. No formatter or linter is configured.
 
-Keep Italian-facing content consistent with existing pages. Preserve semantic markup, image alternative text, keyboard focus styles, and responsive layouts. Edit source CSS rather than the minified copy; avoid unrelated formatting of notebook exports.
+Keep Italian-facing content consistent with existing pages. Preserve semantic markup, image alternative text, keyboard focus styles, and responsive layouts. Edit `css/home.css` for homepage changes and avoid unrelated formatting of notebook exports.
 
 Treat files under `archived/` as historical snapshots. Do not modernize their dependencies, styling, or content unless explicitly requested. Record archived pages in `pages.json` with `status: "archived"`, `maintained: false`, and `archivedYear`.
 
@@ -34,4 +32,4 @@ History uses short, action-oriented subjects, sometimes prefixed with `feat:` or
 
 ## Content Updates
 
-Replace every template placeholder, including `{{PAGE_PATH}}`. The template's homepage hamburger-menu instruction is outdated: the current homepage has no menu. Update `pages.json` and applicable sitemap or feed entries when adding, removing, or renaming pages.
+Update `pages.json` and applicable sitemap or feed entries when adding, removing, or renaming pages. Keep archived pages marked with their archive year and maintenance status.

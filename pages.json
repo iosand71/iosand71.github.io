@@ -87,23 +87,6 @@
         "path": "/archived/2026/homepage-original.css",
         "description": "Frozen stylesheet for the original homepage",
         "editable": false
-      },
-      {
-        "path": "/css/styles.min.css",
-        "description": "Main stylesheet (minified)",
-        "editable": false
-      },
-      {
-        "path": "/css/styles.css",
-        "description": "Main stylesheet (source, editable)",
-        "editable": true
-      }
-    ],
-    "js": [
-      {
-        "path": "/js/core.min.js",
-        "description": "Core JavaScript (hamburger menu)",
-        "editable": false
       }
     ],
     "images": [
@@ -123,10 +106,13 @@
         "path": "/img/background3.gif",
         "description": "Page background pattern"
       }
+    ],
+    "fonts": [
+      {
+        "path": "/font/LatoLatin-Bold.woff2",
+        "description": "Font used by the archived original homepage"
+      }
     ]
-  },
-  "templates": {
-    "newPage": "/_template.html"
   },
   "feeds": [
     {
