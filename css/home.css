@@ -13,7 +13,23 @@ body {
   color: #e8e3d8;
 }
 
+/* Photographic eyes fade softly into the page background. */
+body::before {
+  content: "";
+  position: fixed;
+  top: 65%;
+  left: 55%;
+  width: min(1300px, 120vw);
+  aspect-ratio: 1672 / 941;
+  transform: translate(-50%, -50%);
+  background: url('../img/cat-eyes-photo.png') center / cover no-repeat;
+  mask-image: radial-gradient(ellipse 50% 45% at 50% 46%, #000 35%, transparent 85%);
+  opacity: .3;
+  pointer-events: none;
+}
+
 .page {
+  position: relative;
   width: min(100% - 64px, 960px);
   margin-inline: auto;
 }
@@ -112,6 +128,7 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 8px; }
 .skip-link:focus { transform: translateY(0); }
 
 @media (max-width: 600px) {
+  body::before { left: 50%; width: 170vw; opacity: .26; }
   .page { width: calc(100% - 40px); }
   .site-header { padding-block: 32px; gap: 12px; }
   .logo img { width: 32px; }

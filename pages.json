@@ -112,6 +112,10 @@
         "description": "Logo/navigation icon"
       },
       {
+        "path": "/img/cat-eyes-photo.png",
+        "description": "Photorealistic cat eyes used as the Ink homepage background"
+      },
+      {
         "path": "/img/motto.gif",
         "description": "Motto image (nana-korobi ya-oki)"
       },
