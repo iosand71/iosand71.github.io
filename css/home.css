@@ -58,9 +58,11 @@ body::before {
 
 h1 {
   margin: 0;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: .04em;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: normal;
 }
 
 main { padding-block: clamp(60px, 12vh, 140px) 80px; }
@@ -132,7 +134,7 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 8px; }
   .page { width: calc(100% - 40px); }
   .site-header { padding-block: 32px; gap: 12px; }
   .logo img { width: 32px; }
-  h1 { font-size: 16px; }
+  h1 { font-size: 24px; }
   .motto { column-gap: 16px; }
   .japanese { font-size: 19px; }
   blockquote { font-size: clamp(28px, 6.8vw, 40px); }
