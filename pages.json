@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "description": "Site content manifest for LLM management",
-  "lastUpdated": "2026-09-07",
+  "lastUpdated": "2026-09-08",
   "site": {
     "name": "Iosand.com",
     "url": "https://www.iosand.com",
@@ -16,6 +16,16 @@
       "type": "home",
       "inMenu": false,
       "menuLabel": "Home"
+    },
+    {
+      "path": "/archived/2026/homepage-original.html",
+      "status": "archived",
+      "maintained": false,
+      "archivedYear": 2026,
+      "title": "Iosand Home — Original homepage",
+      "description": "Homepage preserved before the Ink redesign on 2026-09-08.",
+      "type": "home",
+      "inMenu": false
     },
     {
       "path": "/archived/2026/covid19-internazionale.html",
@@ -72,6 +82,11 @@
         "path": "/css/home.css",
         "description": "Homepage stylesheet",
         "editable": true
+      },
+      {
+        "path": "/archived/2026/homepage-original.css",
+        "description": "Frozen stylesheet for the original homepage",
+        "editable": false
       },
       {
         "path": "/css/styles.min.css",
