@@ -91,6 +91,14 @@
     ],
     "images": [
       {
+        "path": "/apple-touch-icon.png",
+        "description": "Apple touch icon for home screen bookmarks"
+      },
+      {
+        "path": "/img/og-image.png",
+        "description": "Homepage social sharing preview image"
+      },
+      {
         "path": "/img/ki.gif",
         "description": "Logo/navigation icon"
       },
@@ -116,6 +124,7 @@
   },
   "feeds": [],
   "seo": {
+    "robots": "/robots.txt",
     "sitemap": "/sitemap.xml",
     "googleVerification": "/googlecb1912c1fd42a9fe.html"
   }
