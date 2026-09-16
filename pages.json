@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "description": "Site content manifest for LLM management",
-  "lastUpdated": "2026-09-08",
+  "lastUpdated": "2026-09-16",
   "site": {
     "name": "Iosand.com",
     "url": "https://www.iosand.com",
@@ -95,7 +95,7 @@
         "description": "Logo/navigation icon"
       },
       {
-        "path": "/img/cat-eyes-photo.png",
+        "path": "/img/cat-eyes-photo.webp",
         "description": "Photorealistic cat eyes used as the Ink homepage background"
       },
       {
@@ -114,13 +114,7 @@
       }
     ]
   },
-  "feeds": [
-    {
-      "path": "/index.xml",
-      "type": "rss",
-      "description": "Main RSS feed"
-    }
-  ],
+  "feeds": [],
   "seo": {
     "sitemap": "/sitemap.xml",
     "googleVerification": "/googlecb1912c1fd42a9fe.html"

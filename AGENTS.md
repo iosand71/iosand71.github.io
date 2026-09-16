@@ -4,7 +4,7 @@
 
 This repository contains the static Iosand.com site hosted through GitHub Pages. `index.html` is the homepage. `archived/2026/covid19-*.html` contains archived, unmaintained notebook-exported data reports; the year directory records the year of archiving. These reports are not linked from the homepage. The original homepage is preserved at `archived/2026/homepage-original.html`.
 
-`css/home.css` styles the homepage, while `archived/2026/homepage-original.css` supports the preserved original homepage. Images live in `img/`; the archived homepage uses `font/LatoLatin-Bold.woff2`. `pages.json` inventories content and assets; `sitemap.xml` and `index.xml` provide the sitemap and RSS feed. `CNAME` configures the custom domain.
+`css/home.css` styles the homepage, while `archived/2026/homepage-original.css` supports the preserved original homepage. Images live in `img/`; the archived homepage uses `font/LatoLatin-Bold.woff2`. `pages.json` inventories content and assets; `sitemap.xml` provides the sitemap. `CNAME` configures the custom domain.
 
 ## Build, Test, and Development Commands
 

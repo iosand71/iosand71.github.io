@@ -8,6 +8,7 @@
 
 body {
   margin: 0;
+  min-height: 100vh;
   min-height: 100svh;
   background: #191a18;
   color: #e8e3d8;
@@ -22,7 +23,8 @@ body::before {
   width: min(1300px, 120vw);
   aspect-ratio: 1672 / 941;
   transform: translate(-50%, -50%);
-  background: url('../img/cat-eyes-photo.png') center / cover no-repeat;
+  background: url('../img/cat-eyes-photo.webp') center / cover no-repeat;
+  -webkit-mask-image: radial-gradient(ellipse 50% 45% at 50% 46%, #000 35%, transparent 85%);
   mask-image: radial-gradient(ellipse 50% 45% at 50% 46%, #000 35%, transparent 85%);
   opacity: .3;
   pointer-events: none;
